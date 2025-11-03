@@ -6,6 +6,7 @@ body {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
 /*HEADER*/
 
 .header{
@@ -68,6 +69,7 @@ body {
     border-radius: 8px;
     padding: 5px 20px;
     border-color:#3882F6; 
+    border: none;
     font-size: 16px;
     cursor: pointer;
 }
@@ -77,8 +79,41 @@ body {
 .info{
     display:flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding:50px 150px;
+    padding:100px;
+    gap: 50px;
+}
+.info-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap:10px;
+    width: 200px;
+    padding: 20px;
+}
+
+.card{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    border:3px solid #3882F6;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.card-text{
+    text-align: center;
 }
 
 .info-text{
@@ -90,11 +125,21 @@ body {
 /*QUOTE*/
 
 .quote{
-    display:flex;
+    display: flex;
     flex-direction: column;
-    background-color: #E5E7EB;
-    text-align: center;
-    padding:20px 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e7eb;
+    padding: 160px;
+    
+}
+.quote-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    gap: 10px;
 }
 
 .quote-text{
@@ -105,6 +150,7 @@ body {
 }
 .quote-author {
     font-weight: bold;
+    align-self: flex-end;
 }
 
 /*SIGNUP*/
@@ -112,14 +158,19 @@ body {
 .signup{
     display:flex;
     justify-content: center;
-    padding: 20px 40px;
+    align-items: center;
+    padding: 100px;
 }
 
 .signup-box{
     background-color: #3882F6;
-    padding: 10px 20px;
+    padding: 30px 80px;
     color:white;
     border-radius: 8px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:100px;
 }
 
 .signup-button{
@@ -139,8 +190,5 @@ body {
     justify-content: center;
     background-color: #1F2937;
     padding: 15px;
-}
-
-.footer p{
-    color:white;
+    color: white;
 }
